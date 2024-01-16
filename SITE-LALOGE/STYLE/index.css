@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-right: 2em ;
+    padding-left: 2em ;
+    font-family: amiamie, marcel; 
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
+    overflow: hidden;
+    background: 
+    linear-gradient(to left,rgba(116, 49, 135, 1), rgba(0, 0, 0, 1)75%);
+    overflow: auto; /* or overflow: scroll; */
+  
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 1em;
+    width: 100%;
+    a { 
+      margin: 1em;
+    }
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/LOGOS-accueil/logo15.png"); 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-image {
+    display: none;
+  }
+  
+  .content {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .show {
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+  }
+  
+  .content , .content-footer , .image-footer {
+    animation: fadeIn 1s ease-out 3s forwards;
+  }
+  
+  .content-footer {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    text-align: left;
+    image-rendering: auto;
+  }
+  
+  .image-footer {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .menu{
+    display: none;
+  }
+  /* BOUTON */
+  .bouton {
+    text-align: right; 
+    margin-top: -40px;
+    margin-right: 0px;
+    display: none;
+  }
+  
+  .bouton-portfolio {
+    padding: 0px 15px;
+    background-color: #FFE600;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    font-size: 3.5em;
+  }
+  
+  .bouton-portfolio:hover {
+    background-color: #000000;
+    color: rgba(116, 49, 135, 1);
+  }
+  
+  /* TYPOTHEQUE */
+  
+  h1 {
+    font-size: 3.5em;
+    text-align: right;
+    text-decoration: none;
+    font-weight: normal;
+    margin-top: 200px;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    text-align: left;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+  
+  h3 {
+    font-size: 5em;
+    text-align: right;
+    font-weight: normal;
+  }
+  
+  @media screen and (max-width: 996px) {
+    body {
+      padding: 0.7em;
+      padding-top: 1em;
+    }
+    
+    .background-image {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/LOGOS-accueil/logo10.png"); 
+    margin-top: -100px;
+    padding-left: 20px;
+  }
+  
+    .content {
+      padding: 0;
+      text-align: center;
+      margin: 0.5em;
+    }
+  
+    .content-footer {
+      display: none;
+    }
+  
+    nav {
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav a {
+      font-size: 1em;
+      padding: 0em;
+      text-align: center;
+    }
+  
+    body { 
+      font-size: 0.8em;
+    }
+  
+    .bouton {
+      margin-top: auto ;
+      margin-bottom: 100px ;
+    }
+  
+    .bouton-portfolio {
+      font-size: 2.5em;
+    }
+  
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-top: 50%;
+    }
+  
+    h3 {
+      font-size: 3em;
+      margin-top: 70px;
+  
+    }
+  
+    .image-footer {
+    img {
+    width: 2em;
+      }
+    }
+  }
+  
+  
+  
+  

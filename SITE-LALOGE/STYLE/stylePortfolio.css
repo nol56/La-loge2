@@ -1,0 +1,52 @@
+body {
+    overflow: auto; /* or overflow: scroll; */
+}
+
+.background-image {
+    background-image: none;
+}
+
+
+.header-image {
+ display: block;
+}
+
+.liste {
+    margin-top: -70px;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: -80px;
+    position: relative;
+    left: 0;
+}
+.image-container {
+    display: none;
+    position: absolute; /* Position absolue pour superposer */
+    top: 90px;
+    left: 0;
+    z-index: 2;
+    padding-left: 100px;
+    }
+    
+.image-container img {
+    width: 400px;
+    box-shadow: 10px 30px 10em rgb(0, 0, 0);
+    }
+
+.image-container h4 {
+    margin-top: 2px;
+}
+
+li:hover .image-container {
+    display: block;
+    }
+
+
+
